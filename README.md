@@ -1,12 +1,14 @@
-# Simulation_Feedback_diversity
-# Feedback Diversity System
+
+# Simulation_Feedback_Diversity
+
+## Feedback Diversity System
 
 This project demonstrates the implementation of a feedback diversity system for wireless communication using MATLAB and Simulink. The system improves signal reliability by selecting the stronger signal between two SISO fading channels and applying a moving average filter for noise reduction.
 
 ## Table of Contents
 - [Project Description](#project-description)
 - [Model Components](#model-components)
-- [MATLAB Code](#matlab-code)
+- [Files](#files)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Simulation](#simulation)
@@ -49,4 +51,63 @@ The feedback diversity system enhances wireless communication by utilizing two S
 ### Output Signal
 - **Scope**: Displays the final processed signal.
 
+## Files
 
+- **Simulink Model**: [Feedback_Diversity.slx](./Feedback_Diversity.slx)
+- **MATLAB Code**: [FEEdback_div_code.m](./FEEdback_div_code.m)
+
+## Getting Started
+
+### Prerequisites
+
+- MATLAB with Simulink installed.
+- Communications System Toolbox for the modulation and channel blocks.
+
+### Installation
+
+1. Clone this repository to your local machine:
+    ```sh
+    git clone https://github.com/your_username/Simulation_Feedback_Diversity.git
+    cd Simulation_Feedback_Diversity
+    ```
+
+2. Open the Simulink model file in MATLAB:
+    ```matlab
+    open('Feedback_Diversity.slx')
+    ```
+
+3. Run the MATLAB script:
+    ```matlab
+    FEEdback_div_code
+    ```
+
+## Usage
+
+1. Open the Simulink model and ensure all blocks are correctly connected.
+2. Run the Simulink model to start the simulation.
+3. Observe the results on the Scope block to analyze the performance of the feedback diversity system.
+
+## Simulation
+
+The simulation involves the following steps:
+1. Generating a sine wave as the input signal.
+2. Quantizing and modulating the signal using 8-PSK modulation.
+3. Passing the signal through SISO fading channels and AWGN channels.
+4. Selecting the stronger signal using a feedback diversity selector.
+5. Applying a moving average filter to the selected signal.
+6. Displaying the final output on the Scope block.
+
+## Results
+
+The output displayed on the Scope block will show the smoothed and noise-reduced signal after applying the feedback diversity technique.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+
+You can copy this code and paste it into your `README.md` file in your GitHub repository. Don't forget to update the GitHub repository URL in the installation section and any other relevant details specific to your project.
