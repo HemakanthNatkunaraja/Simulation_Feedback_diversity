@@ -105,9 +105,3 @@ The output displayed on the Scope block will show the smoothed and noise-reduced
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-You can copy this code and paste it into your `README.md` file in your GitHub repository. Don't forget to update the GitHub repository URL in the installation section and any other relevant details specific to your project.
